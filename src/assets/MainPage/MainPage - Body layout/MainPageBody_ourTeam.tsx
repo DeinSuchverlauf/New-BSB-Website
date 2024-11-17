@@ -100,7 +100,7 @@ const MainPageBody_ourTeam = () => {
     <Box sx={{ p: 10, pl: 10, pr: 10 }}>
       <Box sx={{ mb: 5 }}>
         <Typography variant="h3">Unser Team</Typography>
-        <Divider sx={{ width: 256, mt: 2, mb: 2 }} />
+        <Divider sx={{ width: 256, mt: 2, mb: 2, bgcolor: "black" }} />
         <Typography variant="h5">Die BSB</Typography>
         <Typography variant="body1" sx={{ mt: 1 }}>
           Zu den Kontaktinformationen gelangen sie durch Klicken auf die

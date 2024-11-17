@@ -10,20 +10,20 @@ import SchoolIcon from "@mui/icons-material/School";
 
 const OurSchool_ThatsMe = () => {
   return (
-    <Box sx={{ pt: 10 }}>
+    <Box sx={{ bgcolor: "#729d89", pl: 10, pr: 10, pt: 5, pb: 5 }}>
       <Box sx={{ mb: 5 }}>
-        <Typography variant="h3" sx={{ color: "#729d89" }}>
+        <Typography variant="h3" sx={{ color: "white" }}>
           Mein Steckbrief
         </Typography>
         <Divider
           sx={{
             width: 420,
-            bgcolor: "#729d89",
+            bgcolor: "white",
             mt: 2,
             mb: 2,
           }}
         />
-        <Typography variant="h5" sx={{ color: "#729d89" }}>
+        <Typography variant="h5" sx={{ color: "white" }}>
           Das bin ich!
         </Typography>
       </Box>
@@ -33,7 +33,7 @@ const OurSchool_ThatsMe = () => {
           sx={{
             mx: "auto",
             mt: 5,
-            bgcolor: "#729d89",
+            bgcolor: "white",
             boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
             borderRadius: 3,
             p: 3,
@@ -61,7 +61,7 @@ const OurSchool_ThatsMe = () => {
               </Avatar>
               <Typography
                 variant="h4"
-                sx={{ fontWeight: "bold", color: "white", fontSize: "2rem" }}
+                sx={{ fontWeight: "bold", color: "#729d89", fontSize: "2rem" }}
               >
                 Berufliche Schulen Bretten
               </Typography>
@@ -72,102 +72,116 @@ const OurSchool_ThatsMe = () => {
                 fontStyle: "italic",
                 mb: 2,
                 textAlign: "center",
-                color: "white",
+                color: "#729d89",
                 fontSize: "1.2rem",
               }}
             >
               „Es gibt nur eins, was auf Dauer teurer ist als Bildung, keine
               Bildung“
             </Typography>
-            <Divider sx={{ mb: 3, bgcolor: "white" }} />
+            <Divider sx={{ mb: 3, bgcolor: "#729d89" }} />
 
             <Box sx={{ lineHeight: 2 }}>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Geburtsort:</strong> Bretten
+                <strong style={{ color: "#729d89" }}>Geburtsort:</strong>{" "}
+                Bretten
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Geburtsjahr:</strong> 1828
+                <strong style={{ color: "#729d89" }}>Geburtsjahr:</strong> 1828
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Alter:</strong> 194 Jahre
+                <strong style={{ color: "#729d89" }}>Alter:</strong> 194 Jahre
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Telefon:</strong> 0721 936-61600
+                <strong style={{ color: "#729d89" }}>Telefon:</strong> 0721
+                936-61600
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Muttersprache:</strong> vielsprachig aufgewachsen 🙂
+                <strong style={{ color: "#729d89" }}>Muttersprache:</strong>{" "}
+                vielsprachig aufgewachsen 🙂
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Geschwister:</strong> Gewerbliche Schule, Kaufmännische
-                Schule, Übergang Schule und Beruf,
-                Hauswirtschaftliche/Sozialwissenschaftliche Schule,
+                <strong style={{ color: "#729d89" }}>Geschwister:</strong>{" "}
+                Gewerbliche Schule, Kaufmännische Schule, Übergang Schule und
+                Beruf, Hauswirtschaftliche/Sozialwissenschaftliche Schule,
                 Berufskollegs, Berufliches Gymnasium
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Hobbies:</strong> Industrie 4.0, Übungsfirma, AZAV,
-                Skilandheime, Haus der kleinen Forscher und und und…
+                <strong style={{ color: "#729d89" }}>Hobbies:</strong> Industrie
+                4.0, Übungsfirma, AZAV, Skilandheime, Haus der kleinen Forscher
+                und und und…
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Charakteristische Eigenschaften:</strong> menschlich,
-                vielfältig, verantwortungsbewusst, respektvoll, zielgerichtet,
-                wertschätzend…
+                <strong style={{ color: "#729d89" }}>
+                  Charakteristische Eigenschaften:
+                </strong>{" "}
+                menschlich, vielfältig, verantwortungsbewusst, respektvoll,
+                zielgerichtet, wertschätzend…
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>So komme ich zur Schule:</strong> mit dem Fahrrad, dem
-                Bus/Bahn, dem Auto, zu Fuß
+                <strong style={{ color: "#729d89" }}>
+                  So komme ich zur Schule:
+                </strong>{" "}
+                mit dem Fahrrad, dem Bus/Bahn, dem Auto, zu Fuß
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Das kann ich besonders gut:</strong> nie vergessen, dass
-                der Mensch im Mittelpunkt steht
+                <strong style={{ color: "#729d89" }}>
+                  Das kann ich besonders gut:
+                </strong>{" "}
+                nie vergessen, dass der Mensch im Mittelpunkt steht
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Lieblingsessen:</strong> siehe Mensaplan
+                <strong style={{ color: "#729d89" }}>Lieblingsessen:</strong>{" "}
+                siehe Mensaplan
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Lieblingsfach:</strong> alle natürlich 😉
+                <strong style={{ color: "#729d89" }}>Lieblingsfach:</strong>{" "}
+                alle natürlich 😉
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ fontSize: "1.1rem", color: "white", mb: 1 }}
+                sx={{ fontSize: "1.1rem", color: "black", mb: 1 }}
               >
-                <strong>Was ich noch loswerden wollte:</strong> Ich freue mich,
-                dich hoffentlich bald kennen lernen zu dürfen
+                <strong style={{ color: "#729d89" }}>
+                  Was ich noch loswerden wollte:
+                </strong>{" "}
+                Ich freue mich, dich hoffentlich bald kennen lernen zu dürfen
               </Typography>
             </Box>
           </CardContent>

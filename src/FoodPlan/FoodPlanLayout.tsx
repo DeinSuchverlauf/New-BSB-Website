@@ -186,18 +186,16 @@ const FoodPlanLayout = () => {
   return (
     <Box sx={{ p: 10, pl: 10, pr: 10 }}>
       <Box sx={{ mb: 5 }}>
-        <Typography variant="h3" sx={{ color: "#729d89" }}>
-          Was gibt es zu Essen?
-        </Typography>
+        <Typography variant="h3">Was gibt es zu Essen?</Typography>
         <Divider
           sx={{
             width: 480,
-            bgcolor: "#729d89",
+            bgcolor: "black",
             mt: 2,
             mb: 2,
           }}
         />
-        <Typography variant="h5" sx={{ color: "#729d89" }}>
+        <Typography variant="h5" sx={{ color: "black" }}>
           Speiseplan
         </Typography>
       </Box>
@@ -235,7 +233,7 @@ const FoodPlanLayout = () => {
                     {food.foodName}
                   </Typography>
 
-                  <Divider sx={{ my: 1 }} />
+                  <Divider sx={{ my: 1, bgcolor: "white" }} />
 
                   <Typography
                     variant="body1"
@@ -244,7 +242,7 @@ const FoodPlanLayout = () => {
                     Preis: {food.price}
                   </Typography>
 
-                  <Divider sx={{ my: 1 }} />
+                  <Divider sx={{ my: 1, bgcolor: "white" }} />
 
                   <Typography variant="body2" sx={{ color: "white" }}>
                     Zutaten:
@@ -301,7 +299,7 @@ const FoodPlanLayout = () => {
                             {food.foodName}
                           </Typography>
 
-                          <Divider sx={{ my: 1 }} />
+                          <Divider sx={{ my: 1, bgcolor: "white" }} />
 
                           <Typography
                             variant="body1"
@@ -310,7 +308,7 @@ const FoodPlanLayout = () => {
                             Preis: {food.price}
                           </Typography>
 
-                          <Divider sx={{ my: 1 }} />
+                          <Divider sx={{ my: 1, bgcolor: "white" }} />
 
                           <Typography variant="body2" sx={{ color: "white" }}>
                             Zutaten:
@@ -330,60 +328,6 @@ const FoodPlanLayout = () => {
             )
         )}
       </Box>
-
-      {/* <Box>
-        <Grid2 container sx={{ gap: 2, justifyContent: "center" }}>
-          {foodList.map((food, index) => (
-            <Card
-              sx={{
-                width: 345,
-                boxShadow: 3,
-                borderRadius: 2,
-                overflow: "hidden",
-                backgroundColor: "#ffffff",
-              }}
-            >
-              <CardMedia
-                component="img"
-                height="250"
-                image={food.foodImage}
-                alt={food.foodName}
-              />
-              <CardContent>
-                <Typography
-                  variant="h6"
-                  component="div"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  {food.foodName}
-                </Typography>
-
-                <Divider sx={{ my: 1 }} />
-
-                <Typography variant="body1" sx={{ fontWeight: "medium" }}>
-                  Preis: {food.price}
-                </Typography>
-
-                <Typography
-                  variant="body2"
-                  sx={{ color: "text.secondary", mt: 1 }}
-                >
-                  Tag: {food.day}
-                </Typography>
-
-                <Divider sx={{ my: 1 }} />
-
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  Zutaten:
-                </Typography>
-                <Typography variant="body2" sx={{ mt: 0.5 }}>
-                  {food.ingredients.join(", ")}
-                </Typography>
-              </CardContent>
-            </Card>
-          ))}
-        </Grid2>
-      </Box> */}
     </Box>
   );
 };

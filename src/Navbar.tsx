@@ -199,13 +199,23 @@ const Navbar = () => {
                             <ExpandMoreIcon sx={{ color: "white" }} />
                           }
                         >
-                          <Typography>{page.mainPage}</Typography>
+                          <Typography
+                            sx={{
+                              textDecoration:
+                                page.mainPage.includes("Anmeldung") ||
+                                page.mainPage.includes("Service") ||
+                                page.mainPage.includes("BSB-Intern") ||
+                                page.mainPage.includes("Kontakt")
+                                  ? "line-through"
+                                  : "none",
+                            }}
+                          >
+                            {page.mainPage}
+                          </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                           {page.subpages.map((subpage, subIndex) => (
                             <Box key={`${index}-${subIndex}`}>
-                              {" "}
-                              {/* Eindeutiger Schlüssel */}
                               <Divider />
                               <Button
                                 fullWidth
@@ -224,6 +234,7 @@ const Navbar = () => {
                       </Accordion>
                     ) : (
                       <AccordionSummary
+                        onClick={(e) => handleClick(e, index, page)}
                         sx={{
                           "&:hover": {
                             bgcolor: "#a6c8b9",
@@ -279,7 +290,21 @@ const Navbar = () => {
                   display: "block",
                   "&:hover": {
                     backgroundColor: "#a6c8b9",
+                    textDecoration:
+                      page.mainPage.includes("Anmeldung") ||
+                      page.mainPage.includes("Service") ||
+                      page.mainPage.includes("BSB-Intern") ||
+                      page.mainPage.includes("Kontakt")
+                        ? "line-through"
+                        : "none",
                   },
+                  textDecoration:
+                    page.mainPage.includes("Anmeldung") ||
+                    page.mainPage.includes("Service") ||
+                    page.mainPage.includes("BSB-Intern") ||
+                    page.mainPage.includes("Kontakt")
+                      ? "line-through"
+                      : "none",
                 }}
                 aria-controls={
                   openMenuIndex === index ? "basic-menu" : undefined
@@ -320,14 +345,20 @@ const Navbar = () => {
               ) : undefined}
             </Box>
           ))}
-          <IconButton>
+          <IconButton
+            onClick={() => window.open("https://www.facebook.com/bsbbretten")}
+          >
             <img
               src="Images\Icon\icons8-facebook-96.png"
               width={40}
               height={40}
             />
           </IconButton>
-          <IconButton>
+          <IconButton
+            onClick={() =>
+              window.open("https://www.instagram.com/bsb_bretten/")
+            }
+          >
             <img
               src="Images\Icon\icons8-instagram-100.png"
               width={40}

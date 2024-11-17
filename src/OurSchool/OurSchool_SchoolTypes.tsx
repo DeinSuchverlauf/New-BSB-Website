@@ -80,25 +80,22 @@ const OurSchool_SchoolTypes = () => {
   const [expandCard, setExpandCard] = useState(false);
 
   return (
-    <Box>
+    <Box sx={{ pl: 10, pr: 10, pb: 5 }}>
       <Box>
         <Divider
           sx={{
             width: 420,
-            bgcolor: "#729d89",
+            bgcolor: "black",
             mt: 2,
             mb: 2,
           }}
         />
-        <Typography variant="h5" sx={{ color: "#729d89" }}>
-          Schularten an der BSB
-        </Typography>
+        <Typography variant="h5">Schularten an der BSB</Typography>
       </Box>
 
       <Box
         sx={{
           flexWrap: "nowrap",
-          pt: 5,
           gap: 2,
           justifyContent: "space-between",
         }}
@@ -127,7 +124,6 @@ const OurSchool_SchoolTypes = () => {
                   height: "100%",
                 }}
               >
-                {/* Linker Bereich */}
                 <Box
                   sx={{
                     width: "20%",

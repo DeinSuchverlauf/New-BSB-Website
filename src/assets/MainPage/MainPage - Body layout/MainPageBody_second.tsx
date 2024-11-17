@@ -73,7 +73,7 @@ const MainPageBody_second = () => {
     >
       <Box>
         <Typography variant="h3">Unsere Themengebiete</Typography>
-        <Divider sx={{ width: 500, mt: 2 }} />
+        <Divider sx={{ width: 500, mt: 2, bgcolor: "black" }} />
       </Box>
 
       <Box
