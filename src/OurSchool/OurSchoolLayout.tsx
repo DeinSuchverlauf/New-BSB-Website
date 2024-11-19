@@ -11,7 +11,7 @@ const OurSchoolLayout = () => {
       </Box>
       <OurSchool_SchoolTypes />
       <OurSchool_ThatsMe />
-      <OurSchool_Team />Y
+      <OurSchool_Team />
     </Box>
   );
 };

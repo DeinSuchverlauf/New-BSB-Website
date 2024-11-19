@@ -4,6 +4,7 @@ import {
   CardActionArea,
   CardContent,
   Divider,
+  Grid2,
   Typography,
 } from "@mui/material";
 import AccountCircleTwoToneIcon from "@mui/icons-material/AccountCircleTwoTone";
@@ -73,59 +74,59 @@ const MainPageBody_second = () => {
     >
       <Box>
         <Typography variant="h3">Unsere Themengebiete</Typography>
-        <Divider sx={{ width: 500, mt: 2, bgcolor: "black" }} />
+        <Divider sx={{ width: 100, mt: 2, bgcolor: "black" }} />
       </Box>
 
       <Box
         sx={{
-          display: "flex",
-          flexWrap: "nowrap",
           pt: 5,
-          gap: 2,
-          justifyContent: "space-between",
         }}
       >
-        {custonCardInfoList.map((customcardInfo, index) => (
-          <Card
-            key={index}
-            sx={{
-              width: "20%",
-              height: 300,
-              bgcolor: customcardInfo.color,
-              boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.6)",
-              transition: "transform 0.3s, box-shadow 0.3s",
-              "&:hover": {
-                transform: "scale(1.05)",
-                boxShadow: "0px 15px 30px rgba(0, 0, 0, 1)",
-              },
-            }}
-          >
-            <CardActionArea
-              sx={{ height: "100%", width: "100%", textAlign: "center" }}
-            >
-              <CardContent>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    mb: 2,
-                  }}
+        <Grid2 container spacing={3} sx={{ justifyContent: "center" }}>
+          {custonCardInfoList.map((customcardInfo, index) => (
+            <Grid2 key={index}>
+              <Card
+                key={index}
+                sx={{
+                  width: 270,
+                  height: 300,
+                  bgcolor: customcardInfo.color,
+                  boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.6)",
+                  transition: "transform 0.3s, box-shadow 0.3s",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                    boxShadow: "0px 15px 30px rgba(0, 0, 0, 1)",
+                  },
+                }}
+              >
+                <CardActionArea
+                  sx={{ height: "100%", width: "100%", textAlign: "center" }}
                 >
-                  {customcardInfo.icon}
-                </Box>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="div"
-                  sx={{ color: "white" }}
-                >
-                  {customcardInfo.name}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        ))}
+                  <CardContent>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        mb: 2,
+                      }}
+                    >
+                      {customcardInfo.icon}
+                    </Box>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      sx={{ color: "white" }}
+                    >
+                      {customcardInfo.name}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid2>
+          ))}
+        </Grid2>
       </Box>
     </Box>
   );

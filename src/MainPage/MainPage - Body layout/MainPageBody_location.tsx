@@ -7,7 +7,7 @@ const MainPageBody_location = () => {
         <Typography variant="h3" sx={{ color: "white" }}>
           Wo findet ihr uns?
         </Typography>
-        <Divider sx={{ width: 380, bgcolor: "white", mt: 2, mb: 2 }} />
+        <Divider sx={{ width: 100, bgcolor: "white", mt: 2, mb: 2 }} />
         <Typography variant="h5" sx={{ color: "white" }}>
           Standort
         </Typography>

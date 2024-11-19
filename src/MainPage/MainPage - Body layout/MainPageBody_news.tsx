@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import NewsComponent from "../../../GlobalComponents/NewsComponent";
+import NewsComponent from "../../GlobalComponents/NewsComponent";
 
 const MainPageBody_news = () => {
   const newsData = [

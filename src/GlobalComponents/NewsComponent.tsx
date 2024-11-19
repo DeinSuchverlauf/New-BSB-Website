@@ -34,21 +34,21 @@ const NewsComponent: React.FC<NewsComponentProps> = ({
       <Box sx={{ mb: 5 }}>
         <Typography
           variant="h3"
-          sx={{ color: color === "green" ? "white" : "#729d89" }}
+          sx={{ color: color === "green" ? "white" : "black" }}
         >
           Was gibt es Neues?
         </Typography>
         <Divider
           sx={{
-            width: 420,
-            bgcolor: color === "green" ? "white" : "#729d89",
+            bgcolor: color === "green" ? "white" : "black",
+            width: 100,
             mt: 2,
             mb: 2,
           }}
         />
         <Typography
           variant="h5"
-          sx={{ color: color === "green" ? "white" : "#729d89" }}
+          sx={{ color: color === "green" ? "white" : "black" }}
         >
           News
         </Typography>

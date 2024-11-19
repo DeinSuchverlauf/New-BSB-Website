@@ -189,7 +189,7 @@ const FoodPlanLayout = () => {
         <Typography variant="h3">Was gibt es zu Essen?</Typography>
         <Divider
           sx={{
-            width: 480,
+            width: 100,
             bgcolor: "black",
             mt: 2,
             mb: 2,

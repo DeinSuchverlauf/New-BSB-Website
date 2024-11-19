@@ -7,7 +7,7 @@ const OurSchool_Team = () => {
         <Typography variant="h3">Unser Team</Typography>
         <Divider
           sx={{
-            width: 420,
+            width: 100,
             bgcolor: "black",
             mt: 2,
             mb: 2,

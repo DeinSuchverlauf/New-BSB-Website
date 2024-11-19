@@ -24,14 +24,6 @@ const pagesWithSubpages = [
   {
     mainPage: "Unsere Schule",
     subpages: null,
-    // subpages: [
-    //   "Schularten",
-    //   "Wir über uns",
-    //   "Kollegium",
-    //   "Schulleitung",
-    //   "Sekretariat",
-    //   "Hausmeisterteam",
-    // ],
   },
   { mainPage: "Aktuelles", subpages: null },
   {
@@ -93,10 +85,13 @@ const Navbar = () => {
       setAnchorEl(event.currentTarget);
       setOpenMenuIndex(index);
     } else if (page.mainPage === "Aktuelles") {
+      setDrawerOpen(false);
       navigate("/aktuelles");
     } else if (page.mainPage === "Speiseplan") {
       navigate("/speiseplan");
+      setDrawerOpen(false);
     } else if (page.mainPage === "Unsere Schule") {
+      setDrawerOpen(false);
       navigate("/unsere-schule");
     }
   };
@@ -223,7 +218,21 @@ const Navbar = () => {
                                   color: "white",
                                   "&:hover": {
                                     bgcolor: "#a6c8b9",
+                                    textDecoration:
+                                      page.mainPage.includes("Anmeldung") ||
+                                      page.mainPage.includes("Service") ||
+                                      page.mainPage.includes("BSB-Intern") ||
+                                      page.mainPage.includes("Kontakt")
+                                        ? "line-through"
+                                        : "none",
                                   },
+                                  textDecoration:
+                                    page.mainPage.includes("Anmeldung") ||
+                                    page.mainPage.includes("Service") ||
+                                    page.mainPage.includes("BSB-Intern") ||
+                                    page.mainPage.includes("Kontakt")
+                                      ? "line-through"
+                                      : "none",
                                 }}
                               >
                                 {subpage}

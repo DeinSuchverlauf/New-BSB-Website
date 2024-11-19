@@ -1,5 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import MainPageLayout from "./assets/MainPage/MainPageLayout";
+import MainPageLayout from "./MainPage/MainPageLayout";
 import NewsLayout from "./News/NewsLayout";
 import FoodPlanLayout from "./FoodPlan/FoodPlanLayout";
 import Navbar from "./Navbar";
