@@ -104,7 +104,7 @@ const OurSchool_SchoolTypes = () => {
           <Card
             key={index}
             sx={{
-              height: 300,
+              height: { xs: "auto", md: 300 },
               mt: 5,
               bgcolor: customcardInfo.color,
               boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.6)",
@@ -116,21 +116,27 @@ const OurSchool_SchoolTypes = () => {
             }}
           >
             <CardActionArea
-              sx={{ height: "100%", width: "100%", textAlign: "center" }}
+              sx={{
+                height: "100%",
+                width: "100%",
+                textAlign: "center",
+              }}
             >
               <CardContent
                 sx={{
                   display: "flex",
+                  flexDirection: { xs: "column", md: "row" },
                   height: "100%",
                 }}
               >
                 <Box
                   sx={{
-                    width: "20%",
+                    width: { xs: "100%", md: "20%" },
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
+                    mb: { xs: 2, md: 0 },
                   }}
                 >
                   <Box
@@ -147,7 +153,10 @@ const OurSchool_SchoolTypes = () => {
                     gutterBottom
                     variant="h5"
                     component="div"
-                    sx={{ color: "white" }}
+                    sx={{
+                      color: "white",
+                      fontSize: { xs: "1.2rem", md: "1.5rem" },
+                    }}
                   >
                     {customcardInfo.name}
                   </Typography>
@@ -157,9 +166,10 @@ const OurSchool_SchoolTypes = () => {
                   orientation="vertical"
                   sx={{
                     bgcolor: "white",
-                    height: "100%",
-                    width: "2px",
-                    mx: 3,
+                    height: { xs: "2px", md: "100%" },
+                    width: { xs: "80%", md: "2px" },
+                    mx: { xs: "auto", sm: 3 },
+                    my: { xs: 2, sm: 0 },
                   }}
                 />
 
@@ -170,17 +180,28 @@ const OurSchool_SchoolTypes = () => {
                     flexDirection: "column",
                     justifyContent: "center",
                     color: "white",
+                    textAlign: { xs: "center", md: "left" },
                   }}
                 >
-                  <Box component="ul" sx={{ pl: 2, listStyleType: "disc" }}>
-                    {schoolTypesList.map((schoolInfo, index) => (
+                  <Box
+                    component="ul"
+                    sx={{
+                      pl: { xs: 0, md: 2 },
+                      listStyleType: "disc",
+                    }}
+                  >
+                    {customcardInfo.types.map((type, index) => (
                       <Typography
                         key={index}
                         variant="body1"
                         component="li"
-                        sx={{ mb: 0.5, textAlign: "left" }}
+                        sx={{
+                          mb: 0.5,
+                          textAlign: { xs: "center", sm: "left" },
+                          fontSize: { xs: "0.9rem", md: "1rem" },
+                        }}
                       >
-                        {schoolInfo.types}
+                        {type}
                       </Typography>
                     ))}
                   </Box>
