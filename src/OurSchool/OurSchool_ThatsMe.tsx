@@ -17,7 +17,7 @@ const OurSchool_ThatsMe = () => {
         </Typography>
         <Divider
           sx={{
-            width: 420,
+            width: 100,
             bgcolor: "white",
             mt: 2,
             mb: 2,

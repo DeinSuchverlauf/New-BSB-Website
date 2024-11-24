@@ -84,7 +84,7 @@ const OurSchool_SchoolTypes = () => {
       <Box>
         <Divider
           sx={{
-            width: 420,
+            width: 100,
             bgcolor: "black",
             mt: 2,
             mb: 2,
