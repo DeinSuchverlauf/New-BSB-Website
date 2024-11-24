@@ -4,10 +4,15 @@ import NewsLayout from "./News/NewsLayout";
 import FoodPlanLayout from "./FoodPlan/FoodPlanLayout";
 import Navbar from "./Navbar";
 import OurSchoolLayout from "./OurSchool/OurSchoolLayout";
+import { Fab } from "@mui/material";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 function App() {
-  const MainPage = () => {
-    return;
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -26,6 +31,19 @@ function App() {
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </BrowserRouter>
+
+        <Fab
+          color="default"
+          onClick={scrollToTop}
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            zIndex: 1000,
+          }}
+        >
+          <KeyboardArrowUpIcon />
+        </Fab>
       </div>
     </>
   );
