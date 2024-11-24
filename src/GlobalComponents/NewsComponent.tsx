@@ -77,6 +77,9 @@ const NewsComponent: React.FC<NewsComponentProps> = ({
                   height: "auto",
                   alignContent: "center",
                   p: 3,
+                  "@media (max-width: 600px)": {
+                    display: "none",
+                  },
                 }}
               >
                 <img
